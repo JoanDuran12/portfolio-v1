@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
 
 /*
 	Dimension by HTML5 UP
@@ -142,6 +143,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #ffffff;
 		font-family: "Source Sans Pro", sans-serif;
+		/* font-family: "Space Mono", monospace; */
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
@@ -172,6 +174,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2rem 0;
+		text-align: justify;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -696,10 +699,20 @@ input, select, textarea {
 			}
 
 		.image.main {
-			display: block;
+			/* display: block; */
+			display: flex;
+			flex-direction: column;
+			align-items: center;		
 			margin: 2.5rem 0;
 			width: 100%;
 		}
+
+			#main #intro img {
+				overflow: hidden;
+				border-radius: 50%;
+				height: 300px;
+				width: 300px;
+			}
 
 			.image.main img {
 				width: 100%;
@@ -1650,3 +1663,5 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+		
